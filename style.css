@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #eaf2ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.location {
+  width: 1rem;
+}
+.venue {
+  margin: 2rem;
+}
+.items {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.items > :first-child {
+  flex-shrink: 0;
+}
+
+.items > :nth-child(2) {
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+.items > :last-child {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.date {
+  padding: 5px;
+  display: block;
+  justify-items: center;
+  border-radius: 8px;
+  width: 100px;
+}
+button {
+  width: 100px;
+  border: none;
+  background: #000;
+  color: white;
+  border-radius: 8px;
+  height: 35px;
+}
+p {
+  font-size: 12px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.modal {
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  box-shadow: black;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  justify-items: center;
+  padding-top: 10%;
+}
+.modal-content {
+  background: white;
+  border-radius: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.full-width {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#close {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+#open {
+  margin: 20%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* modal action */
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.btn-no,
+.btn-yes {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-no {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-yes {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-no:hover {
+  background-color: #d32f2f;
+}
+
+.btn-yes:hover {
+  background-color: #388e3c;
+}
+.ticket {
+  width: 20px;
+  color: white;
+}
+.ticketbn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  gap: 5px;
+}
+.soldout {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
